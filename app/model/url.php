@@ -1,5 +1,17 @@
 <?php
+/**
+ * @author		Dmitriy Sokolenko
+ * @copyright	Copyright (c) 2020
+ * @license		https://opensource.org/licenses/GPL-3.0
+ */
+
+/**
+ * ModelToolUrl class
+ */
 class ModelToolUrl extends Model {
+	/**
+	 * @return string
+	 */
 	public function rewrite($name, $options = array()) {
 		$str = mb_convert_encoding((string)$name, 'UTF-8', mb_list_encodings());
 

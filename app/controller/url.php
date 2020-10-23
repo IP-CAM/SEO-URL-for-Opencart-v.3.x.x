@@ -1,5 +1,17 @@
 <?php
+/**
+ * @author		Dmitriy Sokolenko
+ * @copyright	Copyright (c) 2020
+ * @license		https://opensource.org/licenses/GPL-3.0
+ */
+
+/**
+ * ControllerToolUrl class
+ */
 class ControllerToolUrl extends Controller {
+	/**
+	 * @return void
+	 */
 	public function index() {
 		if (!empty($this->request->post)) {
 			$this->load->model('tool/url');
